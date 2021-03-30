@@ -1,0 +1,60 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Reactjs ###
+# dependencies
+frontend/approval/node_modules/
+# frontend/approval/.pnp
+# frontend/approval/.pnp.js
+
+# testing
+# frontend/approval/coverage
+
+# production
+frontend/approval/build/
+
+# misc
+frontend/approval/.DS_Store
+frontend/approval/.env.local
+frontend/approval/.env.development.local
+frontend/approval/.env.test.local
+frontend/approval/.env.production.local
+
+frontend/approval/npm-debug.log*
+frontend/approval/yarn-debug.log*
+frontend/approval/yarn-error.log*

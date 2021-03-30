@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <div>
+        <table>
+            <thead>
+            <tr>
+                <th>제목</th>
+                <th>내용</th>
+                <th>상태</th>
+                <th>작성자ID</th>
+                <th>수정</th>
+                <th>삭제</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="document : ${documents}">
+                <td th:text="${document.title}"></td>
+                <td th:text="${document.content}"></td>
+                <td th:text="${document.status}"></td>
+                <td th:text="${document.creatorId}"></td>
+                <td><a href="/document/edit">결재 수정</a></td>
+                <td><a href="/document/delete">결재 삭제</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div> <!-- /container -->
+</body>
+</html>
